@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Google Font Link */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --sidebar-bg: #20262b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  position: relative;
+  background: #e4e9f7;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 7.8rem;
+  width: calc(100% - 7.8rem);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .container {
+  left: 23rem;
+  width: calc(100% - 23rem);
+}
+
+.message {
+  font-size: 1.6rem;
+  /* font-weight: 700; */
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*:focus {
+  /* outline: 2px ridge #dbe5ff; */
+
+  /* method 1 */
+  /* outline: #dbe5ff ridge 2px;
+  border-radius: 1rem; */
+
+  outline: 2px solid #dbe5ff;
+  border-radius: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.cs-main-container{
+  border-radius: 1rem;
+  
+}
+.cs-message__html-content {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.cs-message__content{
+  background-color: hsl(206, 90%, 45%) !important;
+  color: #fefefe !important;
+}
+.cs-message--outgoing .cs-message__content {
+  background-color: hsl(0, 0%, 80%) !important;
+  color: hsl(0, 0%, 20%) !important;
+  
+}
+
+
+@media (max-width: 42rem) {
+  .sidebar .navItem .tooltip {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

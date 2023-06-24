@@ -1,0 +1,23 @@
+.contact-view .no-contacts {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.new-contact {
+  background-color: #fafafa;
+  padding: 1.6rem;
+  margin: 0.4rem auto;
+  border-radius: 1.2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hand {
+  position: relative;
+  top: -6rem;
+}

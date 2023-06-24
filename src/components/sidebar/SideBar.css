@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 7.8rem;
+  background: #20262b;
+  padding: 0.6px 1.4rem;
+  z-index: 99;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar.open {
+  width: 23rem;
+}
+
+/* Logo Item */
+.logo-details {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sidebar .logo-details .icon {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name {
+  color: #ffe100;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.logo-details .meneuBtn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "deal": "123 Main Street",
+    "from": "Prospecting",
+    "to": "Negotiation",
+    "date": "2023-04-27",
+    "assignedTo": "John Doe"
+  },
+  {
+    "deal": "456 Elm Avenue",
+    "from": "Negotiation",
+    "to": "Closed-Won",
+    "date": "2023-04-26",
+    "assignedTo": "Jane Smith"
+  },
+  {
+    "deal": "789 Oak Lane",
+    "from": "Negotiation",
+    "to": "Closed-Lost",
+    "date": "2023-04-25",
+    "assignedTo": "Bob Johnson"
+  },
+  {
+    "deal": "321 Pine Street",
+    "from": "Prospecting",
+    "to": "Negotiation",
+    "date": "2023-04-24",
+    "assignedTo": "Harry Potter"
+  },
+  {
+    "deal": "654 Maple Avenue",
+    "from": "Negotiation",
+    "to": "Closed-Won",
+    "date": "2023-04-23",
+    "assignedTo": "Hermione Granger"
+  },
+  {
+    "deal": "987 Birch Lane",
+    "from": "Prospecting",
+    "to": "Negotiation",
+    "date": "2023-04-22",
+    "assignedTo": "Ron Weasley"
+  },
+  {
+    "deal": "654 Cedar Street",
+    "from": "Negotiation",
+    "to": "Closed-Lost",
+    "date": "2023-04-21",
+    "assignedTo": "Ginny Weasley"
+  },
+  {
+    "deal": "321 Willow Avenue",
+    "from": "Prospecting",
+    "to": "Negotiation",
+    "date": "2023-04-20",
+    "assignedTo": "Neville Longbottom"
+  },
+  {
+    "deal": "987 Spruce Lane",
+    "from": "Negotiation",
+    "to": "Closed-Won",
+    "date": "2023-04-19",
+    "assignedTo": "Luna Lovegood"
+  },
+  {
+    "deal": "654 Ash Street",
+    "from": "Negotiation",
+    "to": "Closed-Lost",
+    "date": "2023-04-18",
+    "assignedTo": "Cho Chang"
+  }
+]

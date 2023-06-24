@@ -1,0 +1,89 @@
+.navIcon {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .navIcon {
+  color: #fff;
+  height: 4rem;
+  min-width: 5rem;
+  padding: 0.5rem;
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 6rem;
+}
+.sidebar .tooltip {
+  position: absolute;
+  top: -2rem;
+  left: calc(100% + 1.5rem);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 0.5 1rremem rgba(0, 0, 0, 0.3);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar .navItem:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open .navItem .tooltip {
+  display: none;
+}
+
+.sidebar .navItem a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.2rem;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #20262b;
+}
+
+.navItem a .links_name {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.open .navItem a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.navItem a:hover .links_name,
+.navItem a:hover .navIcon {
+  transition: all 0.4s ease;
+  /* color: #11101d; */
+  color: #ffbf00;
+}
+
+.navItem a:hover {
+  background: #444444;
+}
+
+a.selected .navIcon,
+a.selected .links_name,
+.navItem a.selected {
+  background: #7c7c7c;
+
+  color: #ffbf00;
+}

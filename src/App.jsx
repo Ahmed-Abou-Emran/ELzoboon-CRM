@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+import SideBar from "./components/sidebar/SideBar";
+import Home from "./pages/Home";
+// import Contacts from "./pages/Contacts";
+import Deals from "./pages/Deals";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import ChatBot from "./components/ChatBot/ChatBot";
+
+const App = () => {
+  const queryCilent = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: 0,
+        // staleTime: 1000 * 60 * 5,
+        // refetchOnWindowFocus: false,
+        // retry: false,
+      },
+      mutations: {
+        retry: false,
+      },
+    },
+  });
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      {/* <ChatBot /> */}
+      <QueryClientProvider client={queryCilent}>
+        <ReactQueryDevtools initialIsOpen={false} />
+        <Router>
+          <SideBar />
 
-export default App
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              {/* <Route path="/contacts" element={<Contacts />}/> */}
+              <Route path="/deals" element={<Deals />} />
+              {/* <Route path="/reports" element={<Reports />}/> */}
+              {/* <Route path="/calender" element={<Calendar1></Calendar1>}/> */}
+              {/* <Route path="/Reports" element={<Reports />}/> */}
+              {/* <Route path="/inbox" element={<Inbox />}/> */}
+              {/* <Route
+              path="/leads-management"
+              element={<LeadManagementPage />}
+            /> */}
+            </Routes>
+          </div>
+        </Router>
+      </QueryClientProvider>
+    </div>
+  );
+};
+
+export default App;

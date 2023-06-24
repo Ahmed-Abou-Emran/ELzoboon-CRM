@@ -1,0 +1,69 @@
+
+
+.main-container-inbox{
+    display: flex;
+    width: 100%;
+    height:100vh;
+}
+
+.left-container-inbox{
+width: 40%;
+overflow: hidden;
+overflow-y: scroll;
+height: 100vh;
+
+}
+.right-container-inbox{
+    width: 60%; 
+
+    height: 100vh;
+
+}
+
+.mail-card-inbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* .email-content{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-item1{
+    grid-area: 1 / 1 / 1/ 1;
+    background-color: orange;
+}
+.grid-item2{
+    grid-area: 1 / 2 / 1/ 7;
+    background-color: orange;
+}
+.grid-item3{
+    grid-area: 1 / 7 / 1/ 9;
+    background-color: orange;
+}
+.grid-item4{
+    grid-area: 2 / 1 / 2/ 6;
+    background-color: orange;
+}
+.grid-item5{
+    grid-area: 2 / 6 / 2/ 9;
+    background-color: orange;
+}
+.grid-item6{
+    grid-area: 3 / 1 / 3/ 9;
+    background-color: orange;
+}
+.grid-item7{
+    grid-area: 4 / 1 / 8/ 9;
+    background-color: orange;
+}
+.grid-item8{
+    grid-area: 8 / 1 / 9/ 9;
+    background-color: orange;
+} */

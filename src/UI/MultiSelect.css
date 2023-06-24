@@ -1,0 +1,38 @@
+.select-btn {
+  display: flex;
+  height: 4rem;
+  width: 28rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.select-btn .btn-text {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #333;
+}
+.select-btn .arrow-dwn {
+  transition: 0.3s;
+}
+.select-btn.open .arrow-dwn {
+  transform: rotate(-180deg);
+}
+
+.list-items {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 28rem;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: none;
+}
+.select-btn.open ~ .list-items {
+  display: block;
+}

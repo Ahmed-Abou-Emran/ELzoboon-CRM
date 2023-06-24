@@ -1,0 +1,106 @@
+.container .contacts {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  gap: 1rem;
+  color: #20262b;
+  padding: 1.8rem;
+  background-color: #fafafa;
+}
+
+.contact-view {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-view form,
+.contact-view .contact-details,
+.contact-view .contact-timeline {
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+}
+.contact-view .contact-item {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.control-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 6rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.selectedFilters {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+.selectedFilters div {
+  padding: 0.5rem;
+}
+.search-bar {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar .search {
+  width: 3rem;
+}
+.contacts .search-bar button.search {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  border: 1px solid #dbe5ff;
+  border-radius: 50%;
+  background-color: #ffd3bd;
+  margin: 0;
+  transition: all 0.3s ease-out;
+}
+
+select.contacts-filter {
+  width: 18rem;
+}
+.contacts .search-bar button.search:hover {
+  background-color: hsl(20, 100%, 70%);
+}
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 4rem;
+  border-radius: 5rem;
+  border: 1px solid #dbe5ff;
+  background-color: #fafafa;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.right-navigation {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.right-navigation .btn {
+  border: 1px solid hsl(242, 11%, 84%);
+  background-color: hsl(242, 11%, 84%);
+}
+
+.right-navigation .btn:hover,
+.right-navigation .btn:active,
+.right-navigation .active {
+  background-color: hsl(242, 11%, 44%);
+  border-color: hsl(242, 11%, 44%);
+  color: #fff;
+}

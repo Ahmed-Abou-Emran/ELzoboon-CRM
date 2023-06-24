@@ -1,0 +1,147 @@
+fieldset {
+  border: 0;
+}
+.new-contact__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-bottom: 0.8rem;
+  width: 95%;
+  text-align: left;
+  padding: 2rem;
+}
+
+.new-contact__control label {
+  padding-left: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-size:1.5rem;
+  display: block;
+}
+
+.new-contact__control :is(input, select) {
+  font: inherit;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #dbe5ff;
+  background-color: #fafafa;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 24rem;
+}
+
+fieldset[disabled] :is(input, select) {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.btn {
+  color: #101010;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  color: #3c2c3f;
+  border-radius: 1.2rem;
+  margin-right: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn.close {
+  width: 3rem;
+  height: 3rem;
+}
+.btn.form-state {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0.5rem;
+
+  color: #fafafa;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 75, 121, 0.9889705882352942) 0%,
+    rgba(6, 78, 166, 1) 42%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.btn.positive {
+  border: 1px solid hsl(109, 82%, 70%);
+  background-color: hsl(109, 82%, 70%);
+}
+
+.btn.positive:hover,
+.btn.positive:active {
+  background-color: hsl(109, 82%, 80%);
+  border-color: hsl(109, 82%, 80%);
+}
+.btn.negative {
+  color: #fff;
+  border: 1px solid hsl(356, 43%, 39%);
+  background-color: hsl(356, 43%, 39%);
+}
+
+button:hover.btn.negative,
+button:active.btn.negative {
+  background-color: hsl(356, 43%, 70%);
+  border-color: hsl(356, 43%, 70%);
+}
+
+.new-contact button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.new-contact button.alternative:hover,
+.new-contact button.alternative:active {
+  background-color: #fafafa;
+}
+
+.adding-contact,
+.editing-contact {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 90%);
+  position: relative;
+}
+/* .new-contact__control input:focus-visible,
+select:focus {
+  border: 1px solid #80a3ff;
+} */
+
+input::placeholder {
+  color: #aaa;
+}
+input {
+  width: 24rem;
+}
+
+select {
+  width: 10rem;
+}
+
+.new-contact__control p {
+  padding-left: 1rem;
+  color: #ff1f57;
+}
+
+.new-contact__control .error {
+  border: 1px solid #ff1f57;
+}
+
+.new-contact__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}

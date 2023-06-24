@@ -1,0 +1,80 @@
+{
+  "deals": {
+    "column-1": {
+      "title": "Prospecting",
+      "id": "column-1",
+      "cards": [
+        {
+          "id": "card-1",
+          "deal": "Main Street Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-2",
+          "deal": "Elm Avenue Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-3",
+          "deal": "Oak Lane Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-4",
+          "deal": "Pine Street Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        }
+      ]
+    },
+    "column-2": {
+      "title": "Negotiation",
+      "id": "column-2",
+      "cards": [
+        {
+          "id": "card-5",
+          "deal": "Maple Avenue Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-6",
+          "deal": "Birch Lane Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        }
+      ]
+    },
+    "column-3": {
+      "title": "Closed-Won",
+      "id": "column-3",
+      "cards": [
+        {
+          "id": "card-7",
+          "deal": "Cedar Street Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-8",
+          "deal": "Willow Avenue Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        }
+      ]
+    },
+    "column-4": {
+      "title": "Closed-Lost",
+      "done": true,
+      "id": "column-4",
+      "cards": [
+        {
+          "id": "card-9",
+          "deal": "Spruce Lane Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        },
+        {
+          "id": "card-10",
+          "deal": "Ash Street Property",
+          "headerColor": "hsl(0, 0%, 90%)"
+        }
+      ]
+    }
+  },
+  "columnOrder": ["column-1", "column-2", "column-3", "column-4"]
+}
