@@ -6,6 +6,9 @@
 
 **ELzoboon CRM** is an AI-based Customer Relationship Management (CRM) system that harnesses the power of machine learning to enhance traditional CRMs. This repository showcases the specific components and features that I personally worked on as part of the graduation project. For a complete view of the project, please refer to the full repository.
 
+[Full Documentation](https://drive.google.com/file/d/1U1iUBRIwN0l3Q3gQoBQ6UMpk1FCC8LCd/view?usp=drive_link)
+ 
+
 ## My Role
 
 In this project, I held a pivotal role in developing the front-end of the ELzoboon CRM application. I focused on creating captivating user interfaces while ensuring optimal performance and functionality. My responsibilities encompassed:
